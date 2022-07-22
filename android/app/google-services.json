@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "755095116718",
+    "project_id": "reclamacoes-69e62",
+    "storage_bucket": "reclamacoes-69e62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755095116718:android:73f63d259e43340afbc63f",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app_reclame_ja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755095116718-mu0jt04uu0tgnfldj4q6454a4sgiua7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkJSeCbUzdxYFNiKzZ6krJKO8DoLme2hM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755095116718-mu0jt04uu0tgnfldj4q6454a4sgiua7n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "755095116718-gns826q2m0rjdf2fl4lmvrj7g5a350s9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterAppReclameJa"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
