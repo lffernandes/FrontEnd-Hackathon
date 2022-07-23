@@ -112,8 +112,8 @@ Vinícius Ribeiro Itoi       [Linkedin](https://www.linkedin.com/in/viniciusribe
 ## 📝 Autor
 
 <sub><b>Luiz Felipe M. Fernandes</b></sub></a> <a href="https://www.linkedin.com/in/luizffernandes/" title="lzfrnds">🚀</a>
-[![Linkedin Badge](link=https://www.linkedin.com/in/luizffernandes/)](https://www.linkedin.com/in/luizffernandes/) 
-[![Gmail Badge](logo=Gmail&logoColor=white&link=mailto:luiz.fernandesgti@gmail.com)](mailto:luiz.fernandesgti@gmail.com)
+[Linkedin Badge](link=https://www.linkedin.com/in/luizffernandes/)](https://www.linkedin.com/in/luizffernandes/) 
+[Gmail Badge](logo=Gmail&logoColor=white&link=mailto:luiz.fernandesgti@gmail.com)](mailto:luiz.fernandesgti@gmail.com)
 
 ---
 
