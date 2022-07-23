@@ -4,11 +4,6 @@
      🍀 <a href="#" alt="Reclame Já ">Reclame Já</a>
 </h1>
 
-
-<h4 align="center">
-	🚧   Concluído 🚀 🚧
-</h4>
-
 Tabela de conteúdos
 =================
 <!--ts-->
@@ -87,24 +82,20 @@ $ ng serve
 
 ## 🛠 Tecnologias
 
-#### ** FRONT END **  [Flutter](https://www.typescriptlang.org/) + [HTML] + [CSS] + [Typescript] 
+#### ** APP **  [Flutter]
 
-
--    **[angular/animations] "~11.0.1"**
--    **[angular/common] "~11.0.1"**
--    **[angular/compiler] "~11.0.1"**
--    **[angular/core"] ~11.0.1"**
--    **[angular/forms] "~11.0.1"**
--    **[angular/platform-browser] "~11.0.1"**
--    **[angular/platform-browser-dynamic] "~11.0.1"**
--    **[angular/router] "~11.0.1"**
--    **[bower] "^1.8.8"**
--    **[grunt-cli] "^1.3.2"**
--    **[rxjs] "~6.6.0"**
--    **[tslib] "^2.0.0"**
--    **[zone.js] "~0.10.2"**
-
-
+ -    ** [flutter]
+ -    ** [sdk]: "flutter"
+ -    ** [flutter_web_plugins]
+ -    ** [url_strategy]: "^0.2.0"
+ -    ** [amplify_api]: "^0.6.3"
+ -    ** [amplify_core]: "^0.6.3"
+ -    ** [amplify_flutter]: "^0.6.3"
+ -    ** [amplify_auth_cognito]: "^0.6.3"
+ -    ** [wrapper]: "^1.0.2"
+ -    ** [animated_bottom_navigation_bar]: "^0.3.3"
+ -    ** [flutter_icons]: "^1.1.0"
+ -    ** [page_transition]: "^2.0.5"
 
 ---
 
