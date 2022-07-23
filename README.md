@@ -102,7 +102,9 @@ $ ng serve
 ## 🦸 Integrantes do Grupo A - FIAP
 
 Luiz Felipe M. Fernandes    [Linkedin](https://www.linkedin.com/in/luizffernandes/)
+
 Robson J. Galvão da Silva   [https://www.linkedin.com/in/robson-j-galv%C3%A3o-da-silva-bb460218/)
+
 Vinícius Ribeiro Itoi       [Linkedin](https://www.linkedin.com/in/viniciusribeiroitoi/)
 
 ---
