@@ -103,13 +103,13 @@ $ ng serve
 
 Luiz Felipe M. Fernandes    [Linkedin](https://www.linkedin.com/in/luizffernandes/)
 
-Robson J. Galvão da Silva   [https://www.linkedin.com/in/robson-j-galv%C3%A3o-da-silva-bb460218/)
+Robson J. Galvão da Silva   [Linkedin](https://www.linkedin.com/in/robson-j-galv%C3%A3o-da-silva-bb460218/)
 
 Vinícius Ribeiro Itoi       [Linkedin](https://www.linkedin.com/in/viniciusribeiroitoi/)
 
 ---
 
-## 📝 Licença
+## 📝 Autor
 
 <sub><b>Luiz Felipe M. Fernandes</b></sub></a> <a href="https://www.linkedin.com/in/luizffernandes/" title="lzfrnds">🚀</a>
 [![Linkedin Badge](link=https://www.linkedin.com/in/luizffernandes/)](https://www.linkedin.com/in/luizffernandes/) 
