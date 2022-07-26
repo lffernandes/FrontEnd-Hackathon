@@ -1,7 +1,7 @@
-import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_reclame_ja/constants.dart';
-import 'package:flutter_app_reclame_ja/models/plants.dart';
+import 'package:flutter_app_reclame_ja/models/reclamacoes.dart';
+import 'package:flutter_app_reclame_ja/screens/add_solicitacoes.dart';
 import 'package:flutter_app_reclame_ja/screens/home_screen.dart';
 
 import 'package:page_transition/page_transition.dart';
@@ -14,8 +14,8 @@ class RootPage extends StatefulWidget {
 }
 
 class _RootPageState extends State<RootPage> {
-  List<Plant> favorites = [];
-  List<Plant> myCart = [];
+  List<Reclamacao> favorites = [];
+  List<Reclamacao> myCart = [];
 
   int _bottomNavIndex = 0;
 
@@ -23,68 +23,23 @@ class _RootPageState extends State<RootPage> {
   List<Widget> _widgetOptions() {
     return [
       const HomePage(),
-      // FavoritePage(
-      //   favoritedPlants: favorites,
-      // ),
-      // CartPage(
-      //   addedToCartPlants: myCart,
-      // ),
-      // const ProfilePage(),
     ];
   }
-
-  //List of the pages icons
-  List<IconData> iconList = [
-    Icons.home,
-    Icons.favorite,
-    Icons.shopping_cart,
-    Icons.person,
-  ];
-
-  //List of the pages titles
-  List<String> titleList = [
-    'Home',
-    'Favorite',
-    'Cart',
-    'Profile',
-  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              titleList[_bottomNavIndex],
-              style: TextStyle(
-                color: Constants.blackColor,
-                fontWeight: FontWeight.w500,
-                fontSize: 24,
-              ),
-            ),
-            Icon(
-              Icons.notifications,
-              color: Constants.blackColor,
-              size: 30.0,
-            )
-          ],
-        ),
-        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-        elevation: 0.0,
-      ),
       body: IndexedStack(
         index: _bottomNavIndex,
         children: _widgetOptions(),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Navigator.push(
-          //     context,
-          //     PageTransition(
-          //         child: const ScanPage(),
-          //         type: PageTransitionType.bottomToTop));
+          Navigator.push(
+              context,
+              PageTransition(
+                  child: const AddSolicitacao(),
+                  type: PageTransitionType.bottomToTop));
         },
         child: Image.asset(
           'assets/images/code-scan-two.png',
@@ -92,25 +47,6 @@ class _RootPageState extends State<RootPage> {
         ),
         backgroundColor: Constants.primaryColor,
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar: AnimatedBottomNavigationBar(
-          splashColor: Constants.primaryColor,
-          activeColor: Constants.primaryColor,
-          inactiveColor: Colors.black.withOpacity(.5),
-          icons: iconList,
-          activeIndex: _bottomNavIndex,
-          gapLocation: GapLocation.center,
-          notchSmoothness: NotchSmoothness.softEdge,
-          onTap: (index) {
-            setState(() {
-              _bottomNavIndex = index;
-              final List<Plant> favoritedPlants = Plant.getFavoritedPlants();
-              final List<Plant> addedToCartPlants = Plant.addedToCartPlants();
-
-              favorites = favoritedPlants;
-              myCart = addedToCartPlants.toSet().toList();
-            });
-          }),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_reclame_ja/models/plants.dart';
+import 'package:flutter_app_reclame_ja/models/enum/reclamacaotipo.dart';
+import 'package:flutter_app_reclame_ja/models/reclamacoes.dart';
 import 'package:flutter_app_reclame_ja/screens/detail_page.dart';
 
 import 'package:page_transition/page_transition.dart';
@@ -10,11 +11,11 @@ class PlantWidget extends StatelessWidget {
   const PlantWidget({
     Key? key,
     required this.index,
-    required this.plantList,
+    required this.reclamacoesList,
   }) : super(key: key);
 
   final int index;
-  final List<Plant> plantList;
+  final List<Reclamacao> reclamacoesList;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,9 @@ class PlantWidget extends StatelessWidget {
             context,
             PageTransition(
                 child: DetailPage(
-                  plantId: plantList[index].plantId,
+                  idReclamacao: reclamacoesList[index].idReclamacao.toString(),
+                  tipo: reclamacoesList[index].tipo.toString(),
+                  idPedido: reclamacoesList[index].idPedido.toString(),
                 ),
                 type: PageTransitionType.bottomToTop));
       },
@@ -54,24 +57,24 @@ class PlantWidget extends StatelessWidget {
                     shape: BoxShape.circle,
                   ),
                 ),
-                Positioned(
-                  bottom: 5,
-                  left: 0,
-                  right: 0,
-                  child: SizedBox(
-                    height: 80.0,
-                    child: Image.asset(plantList[index].imageURL),
-                  ),
-                ),
+                // Positioned(
+                //   bottom: 5,
+                //   left: 0,
+                //   right: 0,
+                //   child: SizedBox(
+                //     height: 80.0,
+                //     child: Image.asset(reclamacoesList[index].imageURL),
+                //   ),
+                // ),
                 Positioned(
                   bottom: 5,
                   left: 80,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(plantList[index].category),
+                      Text(reclamacoesList[index].tipo.toString()),
                       Text(
-                        plantList[index].plantName,
+                        reclamacoesList[index].descricao.toString(),
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
@@ -83,17 +86,6 @@ class PlantWidget extends StatelessWidget {
                 ),
               ],
             ),
-            Container(
-              padding: const EdgeInsets.only(right: 10),
-              child: Text(
-                r'$' + plantList[index].price.toString(),
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18.0,
-                  color: Constants.primaryColor,
-                ),
-              ),
-            )
           ],
         ),
       ),
