@@ -54,32 +54,6 @@ Antes de começar, você precisa ter instalado em sua máquina as seguintes ferr
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/) ou [AndroidStudio](https://developer.android.com/)
 
 
-#### 🧭 Rodando o APP 
-
-```bash
-
-# Clone este repositório
-$ git clone git@github.com/lffernandes/Sorteio
-
-
-# Acesse a pasta do projeto no seu terminal/cmd
-$ cd SorteioHab
-
-# Vá até a pasta "SorteioHabFront", nossa aplicação Front End
-$ cd SorteioHabFront
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação 
-$ ng serve
-
-# A aplicação será aberta na porta:4200- acesse https://localhost:4200
-
-```
-
----
-
 ## 🛠 Tecnologias
 
 #### ** APP **  [Flutter]
